@@ -1,5 +1,6 @@
 package utils;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,44 +12,53 @@ import pageobjects.TradePage;
 
 
 public class DriverFactory {
-    public static WebDriver driver;
-    public static String appUrl;
-    public static String browser;
-    public static StockPage stockPage;
-    public static TradePage tradePage;
+    public  static WebDriver driver;
+    public  static String appUrl;
+    public  static String browser;
+    public  static StockPage stockPage;
+    public  static TradePage tradePage;
+    public  ChromeOptions options = new ChromeOptions();
 
 
-    public static WebDriver getDriver() {
+    public WebDriver getDriver() {
 
         browser = ReadConfig.getConfigData("config/testEnv.properties", "browser");
         String exePath;
         try {
 
             switch (browser) {
-                case "chrome":
-                    exePath = "src/test/drivers/chromedriver";
-                    System.setProperty("webdriver.chrome.driver", exePath);
-
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--start-maximized");
-               //     options.addArguments("--disable-notifications");
-               //     options.addArguments("--disable-extenstions");
-               //     options.addArguments("disable-infobars");
-
-                    driver = new ChromeDriver(options);
+                case "chrome_local":
+                      exePath = "src/test/drivers/chromedriver";
+                      System.setProperty("webdriver.chrome.driver", exePath);
+                      options.addArguments("--start-maximized");
+                      driver = new ChromeDriver(options);
 
                     break;
 
-                case "firefox":
+                case "chrome_remote":
+                    WebDriverManager.chromedriver().version("75.0.3770.8").setup();
+                    options.addArguments("--start-maximized");
+                    driver = new ChromeDriver(options);
+                    driver.manage().window().maximize();
+
+                    break;
+
+                case "firefox_local":
                     exePath = "src/test/drivers/geckodriver.exe";
                     System.setProperty("webdriver.firefox.driver", exePath);
                     driver = new FirefoxDriver();
                     break;
 
+                case "firefox_remote":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
                 default:
-                    exePath = "src/test/drivers/chromedriver";
-                    System.setProperty("webdriver.chrome.driver", exePath);
-                    driver = new ChromeDriver();
+                    WebDriverManager.chromedriver().setup();
+                    options.addArguments("--start-maximized");
+                    options.addArguments("update --versions.chrome=75.0.3770.80");
+                    driver = new ChromeDriver(options);
                     break;
             }
 
