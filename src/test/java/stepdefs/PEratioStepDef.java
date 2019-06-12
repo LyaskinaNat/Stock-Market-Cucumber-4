@@ -1,10 +1,7 @@
 package stepdefs;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import dataobjects.TradesDfStock;
-import dataobjects.TradesSmStock;
+import cucumber.api.java.en.*;
+import dataobjects.*;
 import utils.DriverFactory;
 import java.util.List;
 
