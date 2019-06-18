@@ -33,7 +33,7 @@ Feature: Volume Weighted Stock Price Calculation for a given stocks
     When  I made trades with the following data
       |  stock   |  price   |  quantity   |  buyOrSell   |
       |   TEA    |   100    |     20      |     Buy      |
-    And I wait 1 min
+    And I wait 16 min
     And  I made trades with the following data
       |  stock   |  price   |  quantity   |  buyOrSell   |
       |   TEA    |   150    |     50      |     Buy      |
