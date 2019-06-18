@@ -3,6 +3,8 @@ package stepdefs;
 import cucumber.api.java.en.*;
 import dataobjects.*;
 import utils.DriverFactory;
+
+import java.io.IOException;
 import java.util.List;
 
 import static utils.DriverFactory.*;
@@ -18,7 +20,7 @@ public class PEratioStepDef {
     }
 
         @When("I made (.+) trades for (.+) stock with the following data")
-    public void i_made_trades_for_stock_with_the_following_data(Integer numberOfTrades, String stock, List<TradesSmStock> trades) {
+    public void i_made_trades_for_stock_with_the_following_data(Integer numberOfTrades, String stock, List<TradesSmStock> trades) throws IOException {
 
        switch (stock) {
             case "TEA": tradePage.makeTrades(numberOfTrades, stock, trades);
@@ -39,7 +41,7 @@ public class PEratioStepDef {
     }
 
     @When("I made trades with the following data")
-    public void i_made_trades_with_the_following_data(List<TradesDfStock> trades) {
+    public void i_made_trades_with_the_following_data(List<TradesDfStock> trades) throws IOException {
         tradePage.makeTradesForDfStock(trades);
     }
 

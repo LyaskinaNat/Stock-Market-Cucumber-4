@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.ReadConfig;
-
+import java.io.IOException;
 import java.util.List;
 public class StockPage extends BasePage {
 
@@ -16,11 +16,11 @@ public class StockPage extends BasePage {
     public String stockTableRows = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/table[1]/tbody[1]/tr";
     public List<WebElement> rows = driver.findElements(By.xpath(stockTableRows));
 
-    public StockPage() {
+    public StockPage() throws IOException {
         super();
     }
 
-    public StockPage assertDisplayedValue (String stock, int index, String testDataKey) {
+    public StockPage assertDisplayedValue (String stock, int index, String testDataKey) throws IOException {
         List<WebElement> rows = driver.findElements(By.xpath(stockTableRows));
         rows.forEach((row) -> {
             String rowText = row.getText();

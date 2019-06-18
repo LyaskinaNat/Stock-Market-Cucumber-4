@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,12 +30,12 @@ public class TradePage extends BasePage {
     @FindBy(name = "submit-button")
     public WebElement submit;
 
-    public TradePage() {
+    public TradePage() throws IOException {
         super();
 
     }
 
-    public TradePage makeTrades (int numberOfTrades, String stock, List<TradesSmStock> trades) {
+    public TradePage makeTrades (int numberOfTrades, String stock, List<TradesSmStock> trades) throws IOException {
 
         try {
 
@@ -60,7 +62,7 @@ public class TradePage extends BasePage {
             return new TradePage();
     }
 
-    public TradePage makeTradesForDfStock (List<TradesDfStock> trades) {
+    public TradePage makeTradesForDfStock (List<TradesDfStock> trades) throws IOException {
         try {
             Select stockSelect = new Select(tradePage.selectStock);
             List<String> stockArr = new ArrayList<>();

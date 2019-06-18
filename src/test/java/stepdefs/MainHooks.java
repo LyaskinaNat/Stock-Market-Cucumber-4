@@ -1,33 +1,51 @@
 package stepdefs;
 
+import com.vimalselvam.cucumber.listener.Reporter;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import pageobjects.BasePage;
 import utils.DriverFactory;
 
 
 public class MainHooks extends DriverFactory {
 
-        @Before
 
-        public void setup() {
-            driver = getDriver();
+    @Before
 
-        }
+    public void setup() {
+        driver = getDriver();
+
+    }
 
 
-        @After
+    @After
 
-        public void tearDown() {
+    public void tearDownAndScreenShotOnFailure(Scenario scenario) {
 
-            try {
 
+        try {
+            if (driver != null && scenario.isFailed()) {
+                BasePage.captureScreenshot(scenario);
                 driver.manage().deleteAllCookies();
                 driver.quit();
-
-            } catch (Exception e) {
-                System.out.println("Exception: " + e.getMessage());
+                driver = null;
             }
+            if (driver != null) {
+                driver.manage().deleteAllCookies();
+                driver.quit();
+                driver = null;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Methods failed: tearDownAndScreenShotOnFailure, Exception:" + e.getMessage());
         }
+    }
 
 }
+
+
+
 
