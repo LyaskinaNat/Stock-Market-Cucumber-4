@@ -377,9 +377,7 @@ public class BasePage extends DriverFactory {
 
     public static void captureScreenshot(Scenario scenario) throws IOException {
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
         screenshotName = returnDateStamp(".png");
-
         FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "/test-output/Screenshots/" + screenshotName));
         scenario.write("Taking a screenshotfor a failing step");
         scenario.write("<br>");

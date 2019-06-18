@@ -1,0 +1,1210 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ExtentReports</title>
+	<meta name="description" content="extent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="extent">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/logger/css/logger-style.css" type="text/css" />
+</head>
+	<body class="standard">
+		<div class="app" id="app">
+<div id="aside" class="app-aside fade box-shadow-x folded dark">
+	<div class="sidenav modal-dialog dk">
+		<div class="navbar">
+			<a href="#" class="navbar-brand">
+			<span class="d-inline small"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></span>
+			</a>
+		</div>
+		<div class="flex hide-scroll">
+			<div class="scroll">
+				<div class="nav-border b-primary">
+					<ul class="nav bg">
+						<li>
+							<a href="index.html">
+							<span class="nav-icon">
+							<i class="fa fa-align-left"></i>
+							</span>
+							<span class="nav-text">Tests</span>
+							</a>
+						</li>
+												<li>
+							<a href="tag.html">
+							<span class="nav-icon">
+							<i class="fa fa-tag"></i>
+							</span>
+							<span class="nav-text">Tags</span>
+							</a>
+						</li>
+						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
+							<a href="dashboard.html">
+							<span class="nav-icon">
+							<i class="fa fa-dashboard"></i>
+							</span>
+							<span class="nav-text">Dashboard</span>
+							</a>
+						</li>
+						<li class="pb-2 hidden-folded"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="no-shrink">
+			<div class="nav-fold">
+				<a id="lightsout" class="d-flex p-2-3"><span><i class="fa fa-desktop"></i></span></a>
+				<div class="hidden-folded flex p-2-3 bg">
+					<div class="d-flex p-1">
+						<a href="http://github.com/extent-framework/extentreports" class="flex text-nowrap"><i class="fa fa-github"></i></a>
+						<a href="http://extentreports.com" class="px-2"><i class="fa fa-book"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			<div id="content" class="app-content box-shadow-0" role="main">
+				<div class="content-header white box-shadow d-lg-none" id="content-header">
+					<div class="navbar navbar-expand-lg">
+						<a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+								<path d="M80 304h352v16H80zM80 248h352v16H80zM80 192h352v16H80z"/>
+							</svg>
+						</a>
+						<div class="navbar-text nav-title flex" id="pageTitle"><img src="logo.png"></div>
+					</div>
+				</div>
+				<div class="content-main d-flex flex" id="content-main">
+					<div class="d-flex flex fixed-height">
+
+<div class="fade aside aside-sm b-r" id="content-aside">
+	<div class="modal-dialog d-flex flex-column h-100">
+		<div class="navbar box-shadow">
+			<div class="input-group flex mr-1">
+              	<input id="qt" type="text" class="form-control px-0 no-bg no-border no-shadow search" placeholder="Search..." required="">
+              	<span class="input-group-btn">
+                	<button class="btn no-bg no-border no-shadow" type="button"><i class="fa fa-search text-muted text-xs"></i></button>
+              	</span>
+            </div>
+		</div>
+		<div class="scrollable hover">
+			<div class="list inset">
+				<div class="p-2 px-3 text-muted text-sm">Tags</div>
+					<div class="list-item attr">
+						<div class="list-body">
+							<a href="#" class="item-title _500">@regression</a>
+							<div class="item-except text-sm text-muted h-1x">
+								47 tests
+							</div>
+							<div class="tc d-none">
+								<h5>@regression</h5>
+								<div class="mb-4">
+									<span class="badge pass text-pass">36 passed</span>
+									<span class="badge pass text-fail">11 failed</span>
+									<span class="badge pass text-skip">0 skipped</span>
+								</div>
+								<table class="table">
+									<thead><tr>
+										<th id="status-col"></th>
+										<th>Test</th>
+										<th>Duration</th>
+										<th>Attributes</th>
+										<th>Media</th>
+										<th>Source</th>
+									</tr></thead>
+									<tbody>
+	
+<tr class="s-fail" test-id="1" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">P/E Ratio Calculation </td>
+	<td>0h 0m 25s+383msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="3" parent-id="1">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
+	<td>0h 0m 7s+92msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="9" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
+	<td>0h 0m 3s+595msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="15" parent-id="1">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
+	<td>0h 0m 3s+673msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="21" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
+	<td>0h 0m 3s+497msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="27" parent-id="1">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
+	<td>0h 0m 3s+531msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="33" parent-id="1">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">P/E Ratio Calculation for a given stock based on the last trade price <br/><span class="text-muted text-sm">P/E Ratio Calculation</span></td>
+	<td>0h 0m 3s+677msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="39" parent-id="39">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Dividend Yield Calculation </td>
+	<td>0h 0m 20s+775msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="41" parent-id="39">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Dividend Yield Calculation for each stock based on stock type (Common/Preferred) <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
+	<td>0h 0m 3s+293msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="47" parent-id="39">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Dividend Yield Calculation for each stock based on stock type (Common/Preferred) <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
+	<td>0h 0m 3s+287msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="53" parent-id="39">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Dividend Yield Calculation for each stock based on stock type (Common/Preferred) <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
+	<td>0h 0m 3s+315msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="59" parent-id="39">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Dividend Yield Calculation for each stock based on stock type (Common/Preferred) <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
+	<td>0h 0m 3s+474msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="65" parent-id="39">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Dividend Yield Calculation for each stock based on stock type (Common/Preferred) <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
+	<td>0h 0m 3s+586msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="71" parent-id="39">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Dividend Yield Calculation for a given stock based on last trade price <br/><span class="text-muted text-sm">Dividend Yield Calculation</span></td>
+	<td>0h 0m 3s+584msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="77" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Geometric Mean Calculation for all prices for a given stock </td>
+	<td>0h 0m 20s+176msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="79" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Geometric Mean for all prices for a given stock <br/><span class="text-muted text-sm">Calculate Geometric Mean for all prices for a given stock</span></td>
+	<td>0h 0m 3s+347msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="85" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Geometric Mean for all prices for a given stock <br/><span class="text-muted text-sm">Calculate Geometric Mean for all prices for a given stock</span></td>
+	<td>0h 0m 3s+658msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="91" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Geometric Mean for all prices for a given stock <br/><span class="text-muted text-sm">Calculate Geometric Mean for all prices for a given stock</span></td>
+	<td>0h 0m 3s+572msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="97" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Geometric Mean for all prices for a given stock <br/><span class="text-muted text-sm">Calculate Geometric Mean for all prices for a given stock</span></td>
+	<td>0h 0m 4s+255msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="103" parent-id="77">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Geometric Mean for all prices for a given stock <br/><span class="text-muted text-sm">Calculate Geometric Mean for all prices for a given stock</span></td>
+	<td>0h 0m 5s+326msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="109" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Record a trade </td>
+	<td>0h 1m 22s+399msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="110" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Trade is submitted successfully if all required fields are filled in <br/><span class="text-muted text-sm">Record a trade</span></td>
+	<td>0h 0m 3s+413msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="117" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 3s+47msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="124" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 3s+122msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="131" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 2s+954msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="139" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+615msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="147" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+784msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="155" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+856msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="164" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+550msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="170" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+405msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="176" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+71msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="182" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+91msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="188" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 8s+752msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="195" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+752msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="201" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+151msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="207" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+358msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="213" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 2s+997msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="219" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 8s+469msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="226" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 3s+394msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="232" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 3s+494msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="238" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 7s+291msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="245" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Volume Weighted Stock Price Calculation for a given stocks</span></td>
+	<td>0h 0m 19s+89msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="246" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Calculate Volume Weighted Stock Price for a given stock</span></td>
+	<td>0h 0m 3s+61msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="252" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Calculate Volume Weighted Stock Price for a given stock</span></td>
+	<td>0h 0m 3s+299msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="258" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Calculate Volume Weighted Stock Price for a given stock</span></td>
+	<td>0h 0m 3s+698msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="264" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Calculate Volume Weighted Stock Price for a given stock</span></td>
+	<td>0h 0m 4s+47msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="270" parent-id="244">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Calculate Volume Weighted Stock Price for a given stock <br/><span class="text-muted text-sm">Calculate Volume Weighted Stock Price for a given stock</span></td>
+	<td>0h 0m 4s+959msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div>
+							<span class="item-meta text-xs lt">
+							<span class="badge pass text-pass">36</span> <span class="badge fail text-fail">11</span> <span class="badge skip text-skip">0</span>
+							</span>
+						</div>
+					</div>
+					<div class="list-item attr">
+						<div class="list-body">
+							<a href="#" class="item-title _500">@smoke</a>
+							<div class="item-except text-sm text-muted h-1x">
+								21 tests
+							</div>
+							<div class="tc d-none">
+								<h5>@smoke</h5>
+								<div class="mb-4">
+									<span class="badge pass text-pass">15 passed</span>
+									<span class="badge pass text-fail">6 failed</span>
+									<span class="badge pass text-skip">0 skipped</span>
+								</div>
+								<table class="table">
+									<thead><tr>
+										<th id="status-col"></th>
+										<th>Test</th>
+										<th>Duration</th>
+										<th>Attributes</th>
+										<th>Media</th>
+										<th>Source</th>
+									</tr></thead>
+									<tbody>
+	
+<tr class="s-fail" test-id="109" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Record a trade </td>
+	<td>0h 1m 22s+399msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="110" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Trade is submitted successfully if all required fields are filled in <br/><span class="text-muted text-sm">Record a trade</span></td>
+	<td>0h 0m 3s+413msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="117" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 3s+47msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="124" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 3s+122msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="131" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are empty <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are empty</span></td>
+	<td>0h 0m 2s+954msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="139" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+615msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="147" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+784msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="155" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade cannot be submitted if some input fields are entered and then deleted <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
+	<td>0h 0m 3s+856msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="164" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+550msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="170" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+405msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="176" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+71msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="182" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 3s+91msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="188" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trade contains required headers <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
+	<td>0h 0m 8s+752msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="195" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+752msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="201" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+151msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="207" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 3s+358msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="213" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 2s+997msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-fail" test-id="219" parent-id="109">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">Recorded trades are populated with the trade data <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
+	<td>0h 0m 8s+469msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+	</td>
+</tr>
+	
+<tr class="s-pass" test-id="226" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 3s+394msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="232" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 3s+494msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+	
+<tr class="s-pass" test-id="238" parent-id="109">
+	<td><span class="w-32 avatar circle pass"><span class="badge">pass</span></span></td>
+	<td class="_600">I can record a required number of trades consequently <br/><span class="text-muted text-sm">I can record a required number of trades consequently</span></td>
+	<td>0h 0m 7s+291msc</td>
+	<td>		<span class="category-list attr-x">
+		<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+		<span class="category badge"><i class="fa fa-tag"></i> @smoke</span>
+		</span>
+</td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div>
+							<span class="item-meta text-xs lt">
+							<span class="badge pass text-pass">15</span> <span class="badge fail text-fail">6</span> <span class="badge skip text-skip">0</span>
+							</span>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>						<div class="d-flex flex" id="content-body">
+							<div class="d-flex flex-column flex white">
+								<div class="navbar flex-nowrap box-shadow">
+									<a data-toggle="modal" data-target="#content-aside" data-modal class="mr-1 d-md-none">
+									<span class="btn btn-sm btn-icon primary">
+									<i class="fa fa-th"></i>
+									</span>
+									</a>
+									<div class="input-group flex mr-1 hidden-sm-down">
+						              	<input id="qc" type="text" class="form-control px-0 no-bg no-border no-shadow search" placeholder="Search..." required="">
+						              	<span class="input-group-btn">
+						                	<button class="btn no-bg no-border no-shadow" type="button"><i class="fa fa-search text-muted text-xs"></i></button>
+						              	</span>
+						            </div>
+									<ul class="nav nav-xs flex-row no-border pull-right">
+								        <li class="nav-item dropdown">
+									        <a class="nav-link b-l" data-toggle="dropdown">
+									            <span class="text-xs ">
+										      		<i class="fa fa-warning"></i>
+										      		<i class="fa fa-caret-down"></i>
+										        </span>
+									        </a>
+								        </li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 18, 2019 03:35:26 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
+								    </ul>
+								</div>
+								<div class="scroll-y">
+									<div id="tcp" class="p-3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/js/attr.js"></script>
+	</body>
+</html>

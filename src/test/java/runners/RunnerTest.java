@@ -18,7 +18,7 @@ import java.io.IOException;
         },
         features = "src/test/resources/features/",
         glue = {"stepdefs"},
-        tags = {})
+        tags = {"@regression"})
 
 public class RunnerTest {
         @AfterClass
