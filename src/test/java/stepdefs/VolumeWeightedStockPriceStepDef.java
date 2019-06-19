@@ -1,4 +1,4 @@
-package stepDefs;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -18,7 +18,7 @@ public class VolumeWeightedStockPriceStepDef {
 
     }
 
-    @Then("^I see calculated Volume Weighted Stock Price for (.+) stock for all trades")
+    @Then("I see calculated Volume Weighted Stock Price for (.+) stock for all trades")
     public void i_see_calculated_Volume_Weighted_Stock_Price_for_stock_for_all_trades(String stock) throws Throwable {
 
         switch (stock) {

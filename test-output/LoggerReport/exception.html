@@ -109,7 +109,7 @@
 						<div class="list-body">
 							<a href="#" class="item-title _500">org.junit.ComparisonFailure</a>
 							<div class="item-except text-sm text-muted h-1x">
-								6 tests
+								4 tests
 							</div>
 							<div class="tc d-none">
 								<h5 class="mb-4">org.junit.ComparisonFailure</h5>
@@ -124,56 +124,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="13" parent-id="1">
-	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then I see the P/E Ratio for POP Stock in My Stock section calculated <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
-	<td>0h 0m 0s+70msc</td>
-	<td></td>
-	<td>
-	</td>
-	<td class="static"><i class="static fa fa-external-link"></i></td>
-</tr>
-<tr class="details">
-	<td colspan="5">
-		
-		<textarea disabled class="code-block">org.junit.ComparisonFailure: Test failed. Actual value: 18.75 doesn't match the expected value: 18.99 expected:<18.[99]> but was:<18.[75]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at pageobjects.StockPage.lambda$assertDisplayedValue$0(StockPage.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at pageobjects.StockPage.assertDisplayedValue(StockPage.java:25)
-	at stepdefs.PEratioStepDef.i_see_the_P_E_Ratio_for_Stock_in_My_Stock_section_calculated(PEratioStepDef.java:26)
-	at ✽.I see the P/E Ratio for POP Stock in My Stock section calculated(src/test/resources/features/PEratio.feature:15)
-</textarea>
-	</td>
-</tr>
-	
-<tr class="s-fail" test-id="25" parent-id="1">
-	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then I see the P/E Ratio for GIN Stock in My Stock section calculated <br/><span class="text-muted text-sm">P/E Ratio Calculation for a given stock</span></td>
-	<td>0h 0m 0s+106msc</td>
-	<td></td>
-	<td>
-	</td>
-	<td class="static"><i class="static fa fa-external-link"></i></td>
-</tr>
-<tr class="details">
-	<td colspan="5">
-		
-		<textarea disabled class="code-block">org.junit.ComparisonFailure: Test failed. Actual value: 18.75 doesn't match the expected value: 18.99 expected:<18.[99]> but was:<18.[75]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at pageobjects.StockPage.lambda$assertDisplayedValue$0(StockPage.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at pageobjects.StockPage.assertDisplayedValue(StockPage.java:25)
-	at stepdefs.PEratioStepDef.i_see_the_P_E_Ratio_for_Stock_in_My_Stock_section_calculated(PEratioStepDef.java:34)
-	at ✽.I see the P/E Ratio for GIN Stock in My Stock section calculated(src/test/resources/features/PEratio.feature:15)
-</textarea>
-	</td>
-</tr>
-	
 <tr class="s-fail" test-id="63" parent-id="39">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Then I see Dividend Yield for GIN Stock in My Stock section based on stock type <br/><span class="text-muted text-sm">Dividend Yield Calculation for each stock based on stock type (Common/Preferred)</span></td>
-	<td>0h 0m 0s+105msc</td>
+	<td>0h 0m 0s+90msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -205,7 +159,7 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Stock input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[18/06/2019, 15:36:48]>
+		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Stock input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[19/06/2019, 09:53:24]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at pageobjects.TradePage.tradeRecordExists(TradePage.java:207)
 	at stepdefs.RecordTradeStepDef.trade_is_not_recorded(RecordTradeStepDef.java:144)
@@ -217,7 +171,7 @@
 <tr class="s-fail" test-id="153" parent-id="109">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Then Trade with missing Price input is not recorded <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
-	<td>0h 0m 0s+38msc</td>
+	<td>0h 0m 0s+33msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -226,7 +180,7 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Price input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[18/06/2019, 15:36:52]>
+		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Price input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[19/06/2019, 09:53:28]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at pageobjects.TradePage.tradeRecordExists(TradePage.java:207)
 	at stepdefs.RecordTradeStepDef.trade_is_not_recorded(RecordTradeStepDef.java:148)
@@ -238,7 +192,7 @@
 <tr class="s-fail" test-id="161" parent-id="109">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Then Trade with missing Quantity input is not recorded <br/><span class="text-muted text-sm">Recorded trade cannot be submitted if some input fields are entered and then deleted</span></td>
-	<td>0h 0m 0s+40msc</td>
+	<td>0h 0m 0s+39msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -247,7 +201,7 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Quantity input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[18/06/2019, 15:36:56]>
+		<textarea disabled class="code-block">org.junit.ComparisonFailure: Trade with missing Quantity input was recorded without the required data expected:<[You currently have no entries to display.]> but was:<[19/06/2019, 09:53:32]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at pageobjects.TradePage.tradeRecordExists(TradePage.java:207)
 	at stepdefs.RecordTradeStepDef.trade_is_not_recorded(RecordTradeStepDef.java:152)
@@ -282,7 +236,7 @@
 <tr class="s-fail" test-id="192" parent-id="109">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Then The trade record has Buy or Sell header <br/><span class="text-muted text-sm">Recorded trade contains required headers</span></td>
-	<td>0h 0m 5s+229msc</td>
+	<td>0h 0m 5s+233msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -304,7 +258,7 @@
 <tr class="s-fail" test-id="223" parent-id="109">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Then The trade records have trade data populated in Buy or Sell fields <br/><span class="text-muted text-sm">Recorded trades are populated with the trade data</span></td>
-	<td>0h 0m 5s+226msc</td>
+	<td>0h 0m 5s+189msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -346,7 +300,7 @@
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 18, 2019 03:35:26 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 19, 2019 09:52:04 AM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
